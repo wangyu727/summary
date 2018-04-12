@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--条件hack-->
+    <!--[if IE]>
+        <style>
+            .test{color: brown}
+        </style>
+    <![endif]-->
+
+   <!-- 属性hack-->
+    <style>
+        .test{
+            color: aqua\9;/*For IE8*/
+            * color: #000;/*IE7 and earlier*/
+            _color:#ff0;/*IE6 and earlier*/
+        }
+    </style>
+
+    <!--选择符hack-->
+    <style>
+        *html.test{color: yellow;} /*IE6 and earlier*/
+        *+html.test{color: black;} /*IE7*/
+    </style>
+
+</head>
+<body>
+
+</body>
+<script>
+    createDocumentFragment(); /*创建一个DOM片段*/
+    createElement();/*创建一个具体元素*/
+    createTextNode();/*创建一个文本节点*/
+
+    appendChild(); /*添加*/
+    removeChild();/*移除*/
+    replaceChild();/*替换*/
+    insertBefore();/*插入*/
+
+    getElementByTagName();/*通过标签名称*/
+    getElementByName();/*通过元素name属性的值*/
+    getElementById();/*通过元素Id，唯一性*/
+</script>
+</html>
