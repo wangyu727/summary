@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table width="400" border="1" id="mytable">
+    <tr>
+        <td>事件冒泡</td>
+        <td>事件冒泡</td>
+        <td>事件冒泡</td>
+    </tr>
+    <tr>
+        <td>事件冒泡</td>
+        <td>事件冒泡</td>
+        <td>事件冒泡</td>
+    </tr>
+    <tr>
+        <td>事件冒泡</td>
+        <td>事件冒泡</td>
+        <td>事件冒泡</td>
+    </tr>
+</table>
+</body>
+
+<script>
+    var table = document.getElementById("mytable");
+    table.onclick = function(e){
+        var event = e||window.event;
+        target = event.srcElement||event.target;
+        alert(target.innerHTML);
+    }
+</script>
+</html>
