@@ -9,4 +9,7 @@ function stopBubble(e){
     {
         window.event.cancelBubble = true;/*IE10及以下浏览器使用这个可以组织事件冒泡*/
     }
+
 }
+
+
